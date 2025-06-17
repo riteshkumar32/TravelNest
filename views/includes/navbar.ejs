@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/" style="
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #2c2c2c;  
+      text-decoration: none;
+    ">
+      <span style="color:  #2D9CDB; font-size: 2rem; font-family: 'Georgia', cursive;">𝓣</span>
+      <span style="letter-spacing: 1px;">ravelNest</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-link custom-nav" href="/">Home</a>
+        <a class="nav-link custom-nav" href="/listings">Explore</a>
+        <a class="nav-link custom-nav" href="/listings/new">Add New Spot</a>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+         <form class="d-flex" role="search">
+      <input style="border-radius:25px" class="form-control me-2" type="search" placeholder="Search destinations"/>
+      <button class="btn btn-search" type="submit">Search</button>
+    </form>
+      </div>
+
+       <div class="navbar-nav ms-auto nav-links">
+          <% if (!currUser) { %>
+            <a class="nav-link custom-nav" href="/signup">Signup</a>
+            <a class="nav-link custom-nav" href="/login">Login</a>
+          <% } else { %>
+            <a class="nav-link custom-nav" href="/logout">Logout</a>
+          <% } %>
+        </div>
+
+
+    </div>
+  </div>
+</nav>
+
+<style>
+
+  .btn-search {
+    background-color: #2D9CDB;
+    color:white;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+  }
+    .btn-search:hover {
+    background-color: #2D9CDB;
+    color:white;
+  }
+  .nav-links .custom-nav {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-right: 20px;
+    color: #2c2c2c;
+    transition: all 0.3s;
+  }
+
+  .nav-links .custom-nav:hover {
+    color: #2D9CDB;
+  }
+
+  .nav-links .custom-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #2D9CDB;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-links .custom-nav:hover::after {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+</style>

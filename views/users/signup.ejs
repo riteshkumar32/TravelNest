@@ -1,0 +1,48 @@
+<% layout('layouts/signupboiler') %>
+<style>
+  body {
+    background: url('https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f4f6fa;
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+
+<div class="p-4 border rounded shadow-sm" style="background-color:rgb(225, 224, 224) ;"class="row mt-3">
+ 
+    <!-- Section Title -->
+    <h3 class="text-center mb-4" style="font-weight: 600; color: #343a40;">
+      Create your account
+    </h3>
+
+    <form action="/signup" method="POST" class="needs-validation" novalidate>
+      <div class="p-4 border rounded shadow-sm">
+        <div class="mb-3">
+          <label for="username" class="form-label"><h4>Username</h4></label>
+          <input name="username" id="username" placeholder="Enter Username" type="text" class="form-control" required />
+          <div class="invalid-feedback">Please enter a Username.</div>
+          <div class="valid-feedback">Username Looks good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label"><h4>Email address</h4></label>
+          <input name="email" id="email" placeholder="Enter your email" type="email" class="form-control" required />
+          <div class="invalid-feedback">Please enter your email.</div>
+          <div class="valid-feedback"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label"><h4>Password</h4></label>
+          <input name="password" id="password" placeholder="Enter password" type="password" class="form-control" required />
+          <div class="invalid-feedback">Please enter a Password.</div>
+          <div class="valid-feedback">Enter a Strong Password</div>
+        </div>
+        <button  style=" border-radius: 2rem;"  class="btn btn-primary mt-3 w-100">Continue</button>
+      </div>
+
+
+    </form>
+  </div>
+</div>
