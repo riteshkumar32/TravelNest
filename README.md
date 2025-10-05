@@ -1,5 +1,4 @@
-# TravelNest — RAD (Requirements and Design) Document
-
+# TravelNest
 ## Project Overview
 TravelNest is a travel booking web app designed to make trip planning easy, fast, and enjoyable. Users can:
 
