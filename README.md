@@ -1,73 +1,68 @@
-📘 TravelNest — RAD (Requirements and Design) Document
-🛎️ Project Overview
-TravelNest is a travel booking web app that helps users:
+# TravelNest — RAD (Requirements and Design) Document
 
-Discover destinations 🏝️
+## Project Overview
+TravelNest is a travel booking web app designed to make trip planning easy, fast, and enjoyable. Users can:
 
-Book stays 🏨
+- Discover destinations  
+- Book stays  
+- Explore experiences  
 
-Explore experiences 🧭
+The goal is to provide a seamless experience for travelers to plan and book their trips.
 
-The goal is to make trip planning easy, fast, and enjoyable.
+---
 
-🎯 1. Objectives
-Let users search and book hotels or homestays.
+## 1. Objectives
+- Allow users to search and book hotels or homestays  
+- Display destination information and local experiences  
+- Ensure the site is mobile-friendly and fast  
+- Provide a simple login system
 
-Show destination info and local experiences.
+---
 
-Make the site mobile-friendly and fast.
+## 2. Functional Requirements
+- User registration and login (email/password)  
+- Search bar for location and dates  
+- Show available stays with details (price, rating, etc.)  
+- Booking page with confirmation  
+- Photos and reviews for each listing  
+- Contact or support page  
 
-Simple login system.
+---
 
-🧩 2. Functional Requirements
-✅ User registration and login (email/password)
+## 3. Non-Functional Requirements
+- Fast loading pages  
+- Secure user data  
+- Responsive design for mobile devices  
+- Easy to host on platforms like Vercel or Netlify  
 
-🔍 Search bar for location and dates
+---
 
-📅 Show available stays with details (price, rating, etc.)
+## 4. Tech Stack
 
-🛏️ Booking page with confirmation
+| Area       | Technology                  |
+|------------|-----------------------------|
+| Frontend   | HTML, CSS, JavaScript       |
+| Styling    | Bootstrap or Tailwind       |
+| Icons      | Font Awesome                |
+| Backend    | Node.js + Express (future)  |
+| Database   | MongoDB / Firebase (future) |
 
-📸 Photos and reviews for each listing
+---
 
-📞 Contact or support page
+## 5. Page Structure
 
-🚫 3. Non-Functional Requirements
-⚡ Fast loading pages
+**Home Page**
+- Navbar with logo and links  
+- Hero section with search  
+- Popular destinations section  
+- Footer with social links  
 
-🔒 User data must be secure
+**Search Results Page**
+- Filterable list of available stays  
 
-📱 Works well on mobile devices
+**Booking Page**
+- Stay details  
+- Booking form  
 
-☁️ Should be easy to host on platforms like Vercel/Netlify
-
-🛠️ 4. Tech Stack
-Area	Technology
-Frontend	HTML, CSS, JavaScript
-Styling	Bootstrap or Tailwind
-Icons	Font Awesome
-Backend (optional)	Node.js + Express (future)
-Database (optional)	MongoDB / Firebase (future)
-
-🧱 5. Page Structure
-Home Page
-
-Navbar with logo, links
-
-Hero section with search
-
-Popular destinations
-
-Footer with socials
-
-Search Results Page
-
-Filterable list of available stays
-
-Booking Page
-
-Stay details
-
-Booking form
-
-Login/Register Page
+**Login/Register Page**
+- User authentication forms  
